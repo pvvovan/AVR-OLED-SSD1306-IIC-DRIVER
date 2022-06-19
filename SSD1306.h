@@ -9,6 +9,10 @@
 #ifndef SSD1306_h
 #define SSD1306_h
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -180,5 +184,9 @@ void OLED_DisableInversion(void);
 void OLED_VerticalGraph(uint8_t var_barGraphNumber_u8, uint8_t var_percentageValue_u8);
 void OLED_HorizontalGraph(uint8_t var_barGraphNumber_u8, uint8_t var_percentageValue_u8);
 /**************************************************************************************************/
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* SSD1306_h */

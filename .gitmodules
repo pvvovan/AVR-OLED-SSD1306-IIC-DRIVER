@@ -1,0 +1,3 @@
+[submodule "AtmegaXX-I2C-Library"]
+	path = AtmegaXX-I2C-Library
+	url = git@github.com:pvvovan/AtmegaXX-I2C-Library.git
