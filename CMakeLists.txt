@@ -28,6 +28,8 @@ add_executable(${PROG}
 	./SSD1306.c
 	./AtmegaXX-I2C-Library/i2c.c)
 
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,-u,vfprintf -lprintf_flt -lm")
+
 add_custom_command(
 	TARGET ${PROG} POST_BUILD
 	COMMAND avr-size -A ${PROG}
