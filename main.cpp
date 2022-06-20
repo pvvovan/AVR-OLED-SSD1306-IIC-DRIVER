@@ -17,11 +17,11 @@ int main(void)
 	OLED_Clear();
 	while (true) {
 		value += 0.1;
-		char str[32];
-		snprintf(str, sizeof(str), "%5.2f", value);
+		char str[32] = { '\0', };
+		snprintf(str, sizeof(str), "value = %5.2f%%", value);
 		OLED_SetCursor(0, 0);
-		OLED_Printf("value = %s%c", str, '%');
-		_delay_ms(1000);
+		OLED_Printf("%s", str);
+		_delay_ms(500);
 	}
 
 	return 0;	// never reached
