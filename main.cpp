@@ -21,6 +21,8 @@ int main(void)
 		snprintf(str, sizeof(str), "value = %5.2f%%", value);
 		OLED_SetCursor(0, 0);
 		OLED_Printf("%s", str);
+		OLED_SetCursor(1, 0);
+		OLED_Printf("Line %s", str);
 		_delay_ms(500);
 	}
 

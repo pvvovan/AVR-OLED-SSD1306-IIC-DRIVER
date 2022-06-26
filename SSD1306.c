@@ -6,22 +6,14 @@
 //  Copyright © 2017 prestonsundar. All rights reserved.
 //
 
-#include <stdio.h>
 #include "SSD1306.h"
-#include <stdio.h>
 #include <stdarg.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
 #include <util/delay.h>
 
 #include "i2c.h"
 
 
-
-
-
 uint8_t OledLineNum, OledCursorPos;
-
 
 
 /***************************************************************************************************
